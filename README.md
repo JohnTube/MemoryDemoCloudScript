@@ -15,3 +15,4 @@ Links:
 - [Uploading CloudScript](https://api.playfab.com/docs/tutorials/landing-automation/using-cloud-script)
 - [Photon Realtime Webhooks](https://doc.photonengine.com/en-us/realtime/current/reference/webhooks).
 - [Using Photon With PlayFab](https://api.playfab.com/docs/tutorials/landing-tournaments/using-photon-with-playfab)
+- [Photon Forums Discussion](http://forum.photonengine.com/discussion/9615/working-memory-demo-with-playfab)
