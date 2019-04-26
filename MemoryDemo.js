@@ -429,7 +429,7 @@ handlers.RoomPropertyUpdated = function (args) {
             data = {};
         checkWebhookArgs(args, timestamp);
         data = getSharedGroupData(args.GameId);
-        if (args.Type !== 'Player' || args.Type !== 'Game') {
+        if (args.Type !== 'Player' && args.Type !== 'Game') {
             throw new PhotonException(2, 'Wrong PathGameProperties Type=' + args.Type, timestamp, {Webhook: args, CustomState: data});
         }
         if (!undefinedOrNull(args.State)) {
