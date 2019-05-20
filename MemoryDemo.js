@@ -301,7 +301,7 @@ handlers.RoomCreated = function (args) {
         if (e instanceof PhotonException) {
             return {ResultCode: e.ResultCode, Message: e.Message};
         }
-        return {ResultCode: -1, Message: e.name + ': ' + e.message};
+        return {ResultCode: 255, Message: e.name + ': ' + e.message};
     }
 };
 
@@ -334,7 +334,7 @@ handlers.RoomClosed = function (args) {
         if (e instanceof PhotonException) {
             return {ResultCode: e.ResultCode, Message: e.Message};
         }
-        return {ResultCode: -1, Message: e.name + ': ' + e.message};
+        return {ResultCode: 255, Message: e.name + ': ' + e.message};
     }
 };
 
@@ -378,7 +378,7 @@ handlers.RoomJoined = function (args) {
         if (e instanceof PhotonException) {
             return {ResultCode: e.ResultCode, Message: e.Message};
         }
-        return {ResultCode: -1, Message: e.name + ': ' + e.message};
+        return {ResultCode: 255, Message: e.name + ': ' + e.message};
     }
 };
 
@@ -418,7 +418,7 @@ handlers.RoomLeft = function (args) {
         if (e instanceof PhotonException) {
             return {ResultCode: e.ResultCode, Message: e.Message};
         }
-        return {ResultCode: -1, Message: e.name + ': ' + e.message};
+        return {ResultCode: 255, Message: e.name + ': ' + e.message};
     }
 };
 
@@ -441,7 +441,7 @@ handlers.RoomPropertyUpdated = function (args) {
         if (e instanceof PhotonException) {
             return {ResultCode: e.ResultCode, Message: e.Message};
         }
-        return {ResultCode: -1, Message: e.name + ': ' + e.message};
+        return {ResultCode: 255, Message: e.name + ': ' + e.message};
     }
 };
 
@@ -464,7 +464,7 @@ handlers.RoomEventRaised = function (args) {
         if (e instanceof PhotonException) {
             return {ResultCode: e.ResultCode, Message: e.Message};
         }
-        return {ResultCode: -1, Message: e.name + ': ' + e.message};
+        return {ResultCode: 255, Message: e.name + ': ' + e.message};
     }
 };
 
@@ -524,6 +524,6 @@ handlers.GetGameList = function (args) {
         if (e instanceof PhotonException) {
             return {ResultCode: e.ResultCode, Message: e.Message};
         }
-        return {ResultCode: -1, Message: e.name + ': ' + e.message};
+        return {ResultCode: 255, Message: e.name + ': ' + e.message};
     }
 };
