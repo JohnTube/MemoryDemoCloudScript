@@ -147,7 +147,7 @@ function checkWebhookArgs(args, timestamp) {
 	if (undefinedOrNull(args.Type)) {
 		throw new PhotonException(1, msg + 'Type', timestamp, args);
 	}
-	if ((args.Type !== 'Close' && args.Type !== 'Save')) {
+	if (args.Type !== 'Close' && args.Type !== 'Save') {
 		if (undefinedOrNull(args.ActorNr)) {
 			throw new PhotonException(1, msg + 'ActorNr', timestamp, args);
 		}
